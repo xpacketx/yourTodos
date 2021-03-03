@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState, useEffect, useReducer} from 'react'
+import TodoList from './TodoList'
+import {Context} from './context'
+import reducer from './reducer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+export default function App() {
+
+  const [todoTitle, setTodoTitle] = useState('')
+ 
+  const [state, dispatch] = useReducer(reducer, 
+    JSON.parse(localStorage.getItem('todos'))
+  )  
+
+  useEffect(() => {                 
+    localStorage.setItem('todos', JSON.stringify(state))  
+  }, [state])  
+
+
+  const addTodo = event => {
+    if(event.key === 'Enter') {
+      dispatch({
+        type: 'add',
+        payload: todoTitle
+      })
+      setTodoTitle('')
+    } 
+  }
+
+
+  return(
+    <Context.Provider value={{
+      dispatch
+    }}>
+      <div className="container">
+        <h1>Todo App</h1>
+
+        <div className="input-field">
+
+        <input 
+          type="text"
+          value={todoTitle}
+          onChange={event => setTodoTitle(event.target.value)}
+          onKeyPress={addTodo}
+        />       
+        <label>Todo Name</label>          
+      </div>
+
+      <TodoList todos={state} />
     </div>
-  );
+    </Context.Provider>
+  )
 }
-
-export default App;
