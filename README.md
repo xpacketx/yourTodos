@@ -11,7 +11,7 @@
 > This application is based on the local state functionality provided by the [React Hooks](https://reactjs.org/docs/hooks-intro.html). The application makes your todo items to be added, removed or stored in a very intuitive and easy way.* 
 
 ### Screenshots
-![easytodo]()
+![easytodo](https://user-images.githubusercontent.com/44978672/109786952-d3ae0080-7c61-11eb-9fd1-3a3615f76ebc.jpg)
 
 ### Built With
 * [React](https://reactjs.org/docs/getting-started.html) - a popular JS front-end library for building composable and highly reusable component-based UIs 
