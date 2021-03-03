@@ -6,7 +6,7 @@
 5. [Features](#features)
 
 ### General Info
-#### `#easytodo`
+### `#easytodo`
 > *This project was created using [Create React App](https://github.com/facebook/create-react-app) and [Material-UI](https://material-ui.com/)
 > This application is based on the local state functionality provided by the [React Hooks](https://reactjs.org/docs/hooks-intro.html). The application makes your todo items to be added, removed or stored in a very intuitive and easy way.* 
 
