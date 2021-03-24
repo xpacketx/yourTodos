@@ -6,9 +6,9 @@
 
 ## General Info
 ### `#easytodo`
-> *This project was created using [Create React App](https://github.com/facebook/create-react-app) and Material-UI.*
-> *This application is based on the local state functionality provided by the React Hooks.
-> *The application makes your todo items to be added, removed or stored in a very intuitive and easy way.* 
+> *This project was created using [Create React App](https://github.com/facebook/create-react-app) and Material-UI.
+> This application is based on the local state functionality provided by the React Hooks.
+> The application makes your todo items to be added, removed or stored in a very intuitive and easy way.* 
 
 ## Built With
 * [React](https://reactjs.org/docs/getting-started.html) - a popular JS front-end library for building composable and highly reusable component-based UIs 
