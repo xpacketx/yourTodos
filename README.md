@@ -4,16 +4,16 @@
 3. [Setup](#setup)
 4. [Features](#features)
 
-### General Info
+## General Info
 ### `#easytodo`
 > *This project was created using [Create React App](https://github.com/facebook/create-react-app) and [Material-UI](https://material-ui.com/)
 > This application is based on the local state functionality provided by the [React Hooks](https://reactjs.org/docs/hooks-intro.html). The application makes your todo items to be added, removed or stored in a very intuitive and easy way.* 
 
-### Built With
+## Built With
 * [React](https://reactjs.org/docs/getting-started.html) - a popular JS front-end library for building composable and highly reusable component-based UIs 
 * Material-UI - a popular library for user interface design in React 
 
-### Setup
+## Setup
 To clone and run this application, you need npm installed on your computer. From your command line:
 ````sh
 # Clone the repository
@@ -29,6 +29,6 @@ $ npm install
 $ npm start  
 ````
 
-### Features
+## Features
 * Managing local state using React Hooks
 * `easytodo` actions are accompanied with Material-UI interactivity and animation
